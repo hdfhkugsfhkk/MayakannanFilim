@@ -53,9 +53,9 @@ pyroutils.MIN_CHAT_ID = -999999999999
 pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002276401285"))
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002354592029').split()]
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'mcumovies')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002197582453"))
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002448950000').split()]
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Cyber_Fcracker')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
