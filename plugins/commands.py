@@ -363,7 +363,7 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{title}"
 
-    xd = await client.send_cached_media(
+    ok = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
@@ -373,12 +373,13 @@ async def start(client, message):
             InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url='https://t.me/CGM_Files')
             ]])
     )
+    replied = ok.id    
     da = await message.reply(DELETE_TXT, reply_to_message_id=replied)
-    await asyncio.sleep(300)
+    await asyncio.sleep(30)
     await message.delete()
     await da.delete()
-    await asyncio.sleep(300)
-    await xd.delete()
+    await asyncio.sleep(230)
+    await ok.delete()
     
     
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
