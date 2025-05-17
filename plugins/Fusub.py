@@ -12,7 +12,7 @@ FUB_TEXT ="""<b><blockquote>Force Subscription Management
 ‣ /viewchat2 - <i>Check invite link for force subscribe channel</i>
 ‣ /purge_one - <i>Clear all force subscribe users from db</i>
 ‣ /purge_two - <i>Clear all force subscribe users from db</i>
-‣ /purge_two - <i>Total all force subscribe Count</i></b>"""
+‣ /totalreq - <i>Total all force subscribe Count</i></b>"""
 
 @Client.on_message(filters.command("fusub"))
 async def generate_link(client, message):
