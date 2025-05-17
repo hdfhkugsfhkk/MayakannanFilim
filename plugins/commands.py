@@ -37,6 +37,15 @@ incol = indb['auto_del']
 infile = indb['file_reply_text']
 restarti = indb['restart']
 
+DELETE_TXT = """<b>📁 <u>Important</u> ⚠️
+
+<blockquote>ഇപ്പൊ അയച്ച് തന്ന Movie Files 10മിനിറ്റിൽ Delete ആകും. അതിന് മുമ്പ് അത് saved messages forward അക്കി വെച്ചോ.. </blockquote>
+
+
+<blockquote>Please save the file to your saved messages, it will be deleted in 10.00 mins</blockquote>
+
+                ▶ @CGM_Files ◀</b>"""
+
 async def admin_check(message: Message) -> bool:
     if not message.from_user: return False
     if message.chat.type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]: return False
@@ -364,6 +373,12 @@ async def start(client, message):
             InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url='https://t.me/CGM_Files')
             ]])
     )
+    da = await message.reply(DELETE_TXT, reply_to_message_id=replied)
+    await asyncio.sleep(300)
+    await message.delete()
+    await da.delete()
+    await asyncio.sleep(300)
+    await xd.delete()
     
     
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
