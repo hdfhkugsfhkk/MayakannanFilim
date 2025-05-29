@@ -614,8 +614,9 @@ async def auto_filter(client, msg, spoll=False):
                 keyboard = InlineKeyboardMarkup(inline_keyboard=[google_row])
                 try:
                     k = await msg.reply_text(text=f"<b>❝ 𝖧𝖾𝗒 {msg.from_user.mention} താഴെ ഉള്ള കാര്യങ്ങൾ ശ്രദ്ധിക്കുക ❞\n\n🔹കറക്റ്റ് സ്പെല്ലിംഗിൽ ചോദിക്കുക. (ഇംഗ്ലീഷിൽ മാത്രം)\n\n🔸സിനിമകൾ ഇംഗ്ലീഷിൽ Type ചെയ്ത് മാത്രം ചോദിക്കുക.\n\n🔹OTT റിലീസ് ആകാത്ത സിനിമകൾ ചോദിക്കരുത്.\n\n🔸സിനിമയുടെ പേര് [വർഷം ഭാഷ] ഈ രീതിയിൽ ചോദിക്കുക.\n\n🔹സിനിമ Request ചെയ്യുമ്പോൾ Symbols ഒഴിവാക്കുക. [+:;'*!-&.. etc\n‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @iam_fraz_bot</b>", reply_markup=keyboard)                    
-                    #await k.delete()
-                    return       
+                    await asyncio.sleep(120)
+                    await k.delete()
+                    return                           
                 except Exception as e:
                     return 
         else:
@@ -708,28 +709,22 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>Hey 👋🏻 {msg.from_user.mention} 😍\n\n📫 Your {search} Files are Ready Now</b>"         
     if imdb and imdb.get('poster'):
         try:
-            mat = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+            ok = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
-           # await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-            
-          #  await message.delete()
+            ok = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            
-          #  await message.delete()
+            ok = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        
-       # await message.delete()
-   # if spoll:
-      #  await msg.message.delete()
-
-
+        ok = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))    
+        await asyncio.sleep(300)
+        await msg.delete()
+        await ok.delete()      
+    if spoll:
+        await msg.message.delete()
 
 async def advantage_spell_chok(msg):
     mv_id = msg.id
