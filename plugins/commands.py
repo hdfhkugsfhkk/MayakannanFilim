@@ -96,7 +96,14 @@ async def send_file(client, query, ident, file_id):
         caption=f_caption,
         protect_content=True if ident == 'checksubp' else False,
         reply_markup=reply_markup
-    )    
+    )  
+    replied = ok.id    
+    da = await message.reply(DELETE_TXT, reply_to_message_id=replied)
+    await asyncio.sleep(600)
+    await message.delete()
+    await da.delete()
+    await asyncio.sleep(600)
+    await ok.delete()
    
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):   
