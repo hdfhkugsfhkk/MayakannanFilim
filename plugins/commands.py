@@ -136,7 +136,7 @@ async def start(client, message):
         ]       
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
-            video="https://envs.sh/H_F.mp4 https://envs.sh/H_I.mp4 https://envs.sh/H_n.mp4",
+            video="https://envs.sh/H_n.mp4",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
