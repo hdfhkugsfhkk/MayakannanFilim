@@ -128,11 +128,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [
-                InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Uᴩᴅᴀᴛᴇꜱ ⚙', url=f'https://t.me/CGM_Files')
+                InlineKeyboardButton('ᥫᩣ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Uᴩᴅᴀᴛᴇꜱ ᥫᩣ', url=f'https://t.me/CGM_Files')
                ],[
-                InlineKeyboardButton('⚓️ Bot Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ⚓️', url=f'https://t.me/Cyber_Fcracker')
+                InlineKeyboardButton('♡ Bot Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ♡', url=f'https://t.me/Cyber_Fcracker')
               ],[
-                InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url="http://t.me/ChithramMovieBot?startgroup=true"),
+                InlineKeyboardButton('✘ ADD ME TO YOUR GROUPS ✘', url="http://t.me/ChithramMovieBot?startgroup=true"),
         ]       
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
