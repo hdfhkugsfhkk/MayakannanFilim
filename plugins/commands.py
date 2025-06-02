@@ -128,11 +128,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [
-                InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url=f'https://t.me/CGM_Files')
+                InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Uᴩᴅᴀᴛᴇꜱ ⚙', url=f'https://t.me/CGM_Files')
                ],[
-                InlineKeyboardButton('⚓️ Oᴛᴛ Iɴsᴛᴀɢʀᴀᴍ Cʜᴀɴɴᴇʟ ⚓️', url=f'https://t.me/CGM_Files')
+                InlineKeyboardButton('⚓️ Bot Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ⚓️', url=f'https://t.me/Cyber_Fcracker')
               ],[
-                InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url="https://t.me/CGM_Files"),
+                InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url="http://t.me/ChithramMovieBot?startgroup=true"),
         ]       
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
@@ -377,7 +377,7 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url='https://t.me/CGM_Files')
             ],[
-            InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url='https://t.me/CGM_Files')
+            InlineKeyboardButton('🖥 Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url='https://t.me/Cyber_Fcracker')
             ]])
     )
     replied = ok.id    
