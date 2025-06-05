@@ -12,6 +12,10 @@ FUB_TEXT ="""<b><blockquote>You can find the bot commands here.</blockquote>
 
 ‣ /broadcast - Reply to a message to send that to all bot users
 
+‣ /deleteall - This will delete all indexed files.
+
+
+
 ‣ /index - Start indexing a database channel (bot must be admin of the channel if that is private channel)
 You can just forward the message from database channel for starting indexing, no need to use the /index command
 /indexlink - Start indexing a database channel using link (bot must be admin of the channel if that is private channel)
