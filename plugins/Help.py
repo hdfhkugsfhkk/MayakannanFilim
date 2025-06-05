@@ -65,7 +65,7 @@ You can just forward the message from database channel for starting indexing, no
 
 ‣ /totalreq - <i>Total all force subscribe Count</i></b>"""
 
-@Client.on_message(filters.command("fusub") & filters.private & filters.user(ADMINS))
+@Client.on_message(filters.command("help") & filters.private & filters.user(ADMINS))
 async def generate_link(client, message):
     command_text = message.text.split(maxsplit=1)
     if len(command_text) < 2:
