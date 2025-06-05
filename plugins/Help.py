@@ -14,7 +14,15 @@ FUB_TEXT ="""<b><blockquote>You can find the bot commands here.</blockquote>
 
 ‣ /deleteall - This will delete all indexed files.
 
+‣ /settings - Group settings 
 
+‣ /deletefiles - special movie files delete
+
+‣ /deletesmallfiles - 
+
+‣ /delete_duplicate - 
+
+‣ /link - Movie Link Carte
 
 ‣ /index - Start indexing a database channel (bot must be admin of the channel if that is private channel)
 You can just forward the message from database channel for starting indexing, no need to use the /index command
