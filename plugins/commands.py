@@ -98,9 +98,9 @@ async def send_file(client, query, ident, file_id):
         reply_markup=reply_markup
     )  
     replied = ok.id    
-    da = await message.reply(DELETE_TXT, reply_to_message_id=replied)
+    da = await query.reply(DELETE_TXT, reply_to_message_id=replied)
     await asyncio.sleep(600)
-    await message.delete()
+    await query.delete()
     await da.delete()
     await asyncio.sleep(600)
     await ok.delete()
