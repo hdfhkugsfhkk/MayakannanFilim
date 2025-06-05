@@ -35,7 +35,7 @@ You can just forward the message from database channel for starting indexing, no
 ‣ /viewchat2 - <i>Check invite link for force subscribe channel</i>
 ‣ /purge_one - <i>Clear all force subscribe users from db</i>
 ‣ /purge_two - <i>Clear all force subscribe users from db</i>
-‣ /totaltalreq - <i>Total all force subscribe Count</i></b>"""
+‣ /totalreq - <i>Total all force subscribe Count</i></b>"""
 
 @Client.on_message(filters.command("help") & filters.private & filters.user(ADMINS))
 async def generate_link(client, message):
