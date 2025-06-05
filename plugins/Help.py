@@ -2,8 +2,22 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from info import ADMINS
 
-FUB_TEXT ="""<b><blockquote>Force Subscription Management
-<i>Set, manage, or clear force subscribe channels.</i></blockquote>
+FUB_TEXT ="""<b><blockquote>You can find the bot commands here.</blockquote>
+
+‣ /logs - Get logs as a file
+
+‣ /restart - Restart the bot
+
+‣ /stats - Get bot user stats (Will send only after checking active users
+
+‣ /broadcast - Reply to a message to send that to all bot users
+
+‣ /index - Start indexing a database channel (bot must be admin of the channel if that is private channel)
+You can just forward the message from database channel for starting indexing, no need to use the /index command
+/indexlink - Start indexing a database channel using link (bot must be admin of the channel if that is private channel)
+/indexlink  or /indexlink  
+
+‣ /delete - Reply to a file to delete it from database
 
 ‣ /setchat1 - <i>Set force subscribe channel - /setchat1 channel_id (Answer the questions after that) Bot must be admin of that channel (Bot will create a new invite link)</i>
 
