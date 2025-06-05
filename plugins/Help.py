@@ -16,6 +16,22 @@ FUB_TEXT ="""<b><blockquote>You can find the bot commands here.</blockquote>
 
 ‣ /settings - Group settings 
 
+‣ /gfilter - Global filter Adding
+
+‣ /viewgfilters - Total Global filter Show
+
+‣ /delg - special Global filter Delete
+
+‣ /delallg - All Global filter Delete
+
+‣ /filter - adding Filter
+
+‣ /filters - show all Filters
+
+‣ /del - Global filter Delete
+
+‣ /delall - All Filter Delete
+
 ‣ /deletefiles - special movie files delete
 
 ‣ /deletesmallfiles - 
