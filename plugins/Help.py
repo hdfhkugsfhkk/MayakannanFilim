@@ -8,7 +8,7 @@ FUB_TEXT ="""<b><blockquote>You can find the bot commands here.</blockquote>
 
 ‣ /restart - Restart the bot
 
-‣ /stats - Get bot user stats (Will send only after checking active users
+‣ /stats - Get bot user stats (Will send only after checking active users & Get count of total files in DB
 
 ‣ /broadcast - Reply to a message to send that to all bot users
 
