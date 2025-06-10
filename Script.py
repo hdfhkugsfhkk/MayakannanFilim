@@ -41,7 +41,7 @@ Name - {}
 """
     CUSTOM_FILE_CAPTION = """<b>𝐻𝑒𝑙𝑙𝑜 👋 {mention} 😍
     
-{file_caption}
+{file_name}
 
 ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗ 
 ➲ <a href='https://t.me/+3Tt4KOAFbAM4NDQ9'>@MOVIE REQUEST GROUP</a>
