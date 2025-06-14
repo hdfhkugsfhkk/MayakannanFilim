@@ -44,7 +44,7 @@ Name - {}
 {file_name}
 
 ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗ 
-➲ <a href='https://t.me/+3Tt4KOAFbAM4NDQ9'>@MOVIE REQUEST GROUP</a>
+➲ <a href='https://t.me/+BBOuDutzhVBmM2Y1'>@MOVIE REQUEST GROUP</a>
 ➲ <a href='https://t.me/CGM_Files'>@MAIN CHANNEL</a>
 ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝
 </b>"""
