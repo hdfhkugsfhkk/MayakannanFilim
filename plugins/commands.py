@@ -39,7 +39,7 @@ restarti = indb['restart']
 
 DELETE_TXT = """<b>📁 <u>Important</u> ⚠️
 
-<blockquote>ഇപ്പൊ അയച്ച് തന്ന Movie Files 10മിനിറ്റിൽ Delete ആകും. അതിന് മുമ്പ് അത് saved messages forward അക്കി വെച്ചോ.. </blockquote>
+<blockquote>മായക്കണ്ണൻ ഇപ്പൊ അയച്ചുതരുന്ന Movie Files 10മിനിറ്റിൽ Delete ആകും. അതിന് മുമ്പ് അത് saved messages forward അക്കി വെച്ചോ.. </blockquote>
 
 
 <blockquote>Please save the file to your saved messages, it will be deleted in 10.00 mins</blockquote>
@@ -132,11 +132,11 @@ async def start(client, message):
                ],[
                 InlineKeyboardButton('♡ Bot Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ♡', url=f'https://t.me/Cyber_Fcracker')
               ],[
-                InlineKeyboardButton('✘ ADD ME TO YOUR GROUPS ✘', url="http://t.me/ChithramMovieBot?startgroup=true"),
+                InlineKeyboardButton('✘ ADD ME TO YOUR GROUPS ✘', url="http://t.me/MoviefrazBot?startgroup=true"),
         ]       
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
-            video="https://envs.sh/H_n.mp4",
+            video="https://envs.sh/Mo0.mp4",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
