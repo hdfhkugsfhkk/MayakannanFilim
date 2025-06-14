@@ -1,9 +1,9 @@
 class script(object):
     START_TXT = """<b>𝖧𝖾𝗒 {}, 𝖨 𝖠𝗆 <a href=https://t.me/{}>{}</a>, 𝖧𝖺𝗉𝗉𝗒 🖤 𝖳𝗈 𝖧𝖺𝗏𝖾 𝖸𝗈𝗎
 
-Here You Can Request Movie's, Just Sent <a href='https://t.me/ChithramMovieBot'>Movie Name</a> With Proper <a href='https://www.google.com/'>Google</a> Spelling..!!
+മായം… മായം…മായം… ജലം… ജലം…വരുന്നു, വരുന്നു, വേഗത്തിൽ,തണ്ടയുമായി മായക്കണ്ണൻ 🪄
 
-Fᴏʀ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ Cʟɪᴄᴋ /help
+Here You Can Request Movie's, Just Sent <a href='https://t.me/ChithramMovieBot'>Movie Name</a> With Proper <a href='https://www.google.com/'>Google</a> Spelling..!!
 
 Cᴏɴᴛᴀᴄᴛ Bᴏᴛ Dᴇᴠᴇʟᴏᴘᴇʀ (Oʀ) Rᴇᴘᴏʀᴛ Bᴜɢꜱ..!! 👉 @iam_fraz_bot</b>"""
 
